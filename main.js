@@ -30,30 +30,7 @@ const toggleSearch = () => {
     search.style.background = 'rgba(255, 255, 255, 0.5)';
     search.style.border = '2px solid rgba(255, 255, 255, 1)';
   });
-
-  // if (searchInput.focus) {
-  //   search.style.background = 'rgba(255, 255, 255, 0.5)';
-  //   search.style.border = '2px solid rgba(255, 255, 255, 1)';
-  // } else {
-  //   search.style.background = 'inherit';
-  //   search.style.border = '2px solid transparent';
-  // }
 };
-
-// const toggleSearch = () => {
-//   console.log('clicked');
-
-//   searchInput.classList.toggle('open');
-
-//   if (searchInput.classList.contains('open')) {
-//     search.style.background = 'rgba(255, 255, 255, 0.5)';
-//     search.style.border = '2px solid rgba(255, 255, 255, 1)';
-//     searchInput.focus();
-//   } else {
-//     search.style.background = 'inherit';
-//     search.style.border = '2px solid transparent';
-//   }
-// };
 
 const toggleMenu = () => {
   mobileMenu.classList.toggle('open');
@@ -67,7 +44,6 @@ const toggleMenu = () => {
 };
 
 const toggleModal = () => {
-  // backdrop.hidden = backdrop.hidden ? false : true;
   modal.classList.toggle('open');
   backdrop.classList.toggle('open');
 
@@ -106,17 +82,3 @@ menuCTA.addEventListener('animationiteration', event => {
 menuCTA.addEventListener('animationend', event => {
   console.log('end', event);
 });
-
-// const toggleSearch = () => {
-//   if (search.style.width !== '0%') {
-//     search.style.width = '0%';
-
-//     searchButton.addEventListener('click', toggleSearch);
-//   } else {
-//     search.style.width = '100%';
-
-//     searchButton.removeEventListener('click', toggleSearch);
-//   }
-// };
-
-// searchButton.addEventListener('click', toggleSearch);
