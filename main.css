@@ -752,6 +752,7 @@ canvas, embed, iframe, img, object, picture, video {
     }
 
     .header__brand {
+        margin-left: 0;
         padding-left: 4rem;
     }
 
