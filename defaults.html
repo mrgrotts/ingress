@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <link rel="shortcut icon" href="alt.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="defaults.css" rel="stylesheet" type="text/css">
+        <title>Ingress</title>
+    </head>
+    <body>
+        <button id="floating-action" class="floating-action-button">
+            <a class="floating-action-button__anchor">
+                <i class="material-icons">add</i>
+            </a>
+        </button>
+        <div class="backdrop"></div>
+        <div class="modal">
+            <h1 class="modal__title">Do you want to continue?</h1>
+            <div class="modal__actions">
+                <a href="" class="modal__action">Yes!</a>
+                <a class="modal__action modal__action--negative" type="button">No!</a>
+            </div>
+        </div>
+
+         <header class="header">
+            <div class="header__brand">
+                <img class="header__logo" src="alt.png" alt="Brand Name" height="80px" width="80px" />
+                <h1 class="header__logo--text">INGRESS</h1>
+            </div>
+
+            <div class="header__search">
+                <input id="search" class="header__search--input" name="search" type="text" />
+                <div class="header__search--icon"><i class="material-icons">search</i></div>
+            </div>
+
+            <nav class="header__mobile-navigation">
+                <div class="header__mobile-navigation--brand">
+                    <img class="header__logo" src="alt.png" alt="Brand Name" height="48px" width="48px" />
+                    <h1 class="header__logo--text">INGRESS</h1>
+                </div>
+                <hr class="header__mobile-navigation--divider">
+                <div class="header__mobile-search">
+                    <input id="search" class="header__mobile-search--input" name="search" type="text" />
+                    <div class="header__mobile-search--icon"><i class="material-icons">search</i></div>
+                </div>
+                <ul class="header__mobile-navigation--list">
+                    <li class="header__mobile-navigation--item">
+                        <a href="marketing.html">Marketing</a>
+                    </li>
+                    <li class="header__mobile-navigation--item">
+                        <a href="sales.html">Sales</a>
+                    </li>
+                    <li class="header__mobile-navigation--item">
+                        <a href="operations.html">Operations</a>
+                    </li>
+                    <li class="header__mobile-navigation--item">
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li class="header__mobile-navigation--item header__mobile-navigation--item-cta">
+                        <a href="/signup.html">Early Access</a>
+                    </li>
+                </ul>
+                <div class="header__mobile-navigation--close">&times;</div>
+            </nav>
+
+            <nav class="header__navigation">
+                <ul class="header__navigation--list">
+                    <li class="header__navigation--item">
+                        <a href="marketing.html">Marketing</a>
+                    </li>
+                    <li class="header__navigation--item">
+                        <a href="sales.html">Sales</a>
+                    </li>
+                    <li class="header__navigation--item">
+                        <a href="operations.html">Operations</a>
+                    </li>
+                    <li class="header__navigation--item">
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li class="header__navigation--item header__navigation--item-cta">
+                        <a href="/signup.html">Early Access</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-button" class="header__mobile-navigation--toggle-button">&#9776;</div>
+            
+        </header>
+        <main>
+            <section id="section-card" class="section__full-width">
+                <!-- <img class="section__logo" src="Icon.png" alt="Brand Name" /> -->
+                <h1 class="section__full-width--title">SECTION TITLE</h1>
+                <hr>
+                <article class="section__full-width--article">
+                    <h2 class="section__full-width--article--title">MAIN CONTENT</h2>
+                    <h3 class="section__full-width--article--subtitle">A SUBHEADING</h3>
+                    <div class="section__full-width--content">
+                        <p class="section__full-width--text">Some regular old section content here folks.</p>
+                        <button class="section__full-width--call-to-action">Learn More</button>
+                    </div>
+                </article>
+                <hr>
+                <article class="section__full-width--article">
+                    <h2 class="section__full-width--article--title">MAIN CONTENT</h2>
+                    <h3 class="section__full-width--article--subtitle">A SUBHEADING</h3>
+                    <div class="section__full-width--content">
+                        <p class="section__full-width--text">Some regular old section content here folks.</p>
+                        <button class="section__full-width--call-to-action">Learn More</button>
+                    </div>
+                </article>
+            </section>
+            
+            <section id="section-form" class="section">
+                <div class="section__form">
+                    <form action="index.html">
+                        <fieldset>
+                            <label for="title">Title</label>
+                            <select id="title">
+                                <option value="mr">Mr.</option>
+                                <option value="ms">Ms.</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" required>                        
+                        </fieldset>
+                        <fieldset>
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" required>                        
+                        </fieldset>
+                        <fieldset>
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" required>                        
+                        </fieldset>
+                        <fieldset>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>                        
+                        </fieldset>
+                        <fieldset>
+                            <label for="agree-terms">Accept
+                                <a href="#">Terms &amp; Conditions</a>
+                            </label>
+                            <input type="checkbox" id="agree-terms" required />
+                            <div class="checkmark">&#x2714;</div>                   
+                        </fieldset>
+
+                        <button type="submit" disabled>Sign Up</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="section-grid-example" class="section">
+                    <div class="scaling-grid-container">
+                        <div class="scaling-grid-element card">
+                            <article class="section__article">
+                                <h2 class="section__article--title">MAIN CONTENT</h2>
+                                <h3 class="section__article--subtitle">A SUBHEADING</h3>
+                                <div class="section__content">
+                                    <p class="section__text">Some regular old section content here folks.</p>
+                                    <button class="section__call-to-action">Learn More</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="scaling-grid-element card">
+                            <article class="section__article">
+                                <h2 class="section__article--title">MAIN CONTENT</h2>
+                                <h3 class="section__article--subtitle">A SUBHEADING</h3>
+                                <div class="section__content">
+                                    <p class="section__text">Some regular old section content here folks.</p>
+                                    <button class="section__call-to-action">Learn More</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="scaling-grid-element card">
+                            <article class="section__article">
+                                <h2 class="section__article--title">MAIN CONTENT</h2>
+                                <h3 class="section__article--subtitle">A SUBHEADING</h3>
+                                <div class="section__content">
+                                    <p class="section__text">Some regular old section content here folks.</p>
+                                    <button class="section__call-to-action">Learn More</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="scaling-grid-element card">
+                            <article class="section__article">
+                                <h2 class="section__article--title">MAIN CONTENT</h2>
+                                <h3 class="section__article--subtitle">A SUBHEADING</h3>
+                                <div class="section__content">
+                                    <p class="section__text">Some regular old section content here folks.</p>
+                                    <button class="section__call-to-action">Learn More</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="scaling-grid-element card">
+                            <article class="section__article">
+                                <h2 class="section__article--title">MAIN CONTENT</h2>
+                                <h3 class="section__article--subtitle">A SUBHEADING</h3>
+                                <div class="section__content">
+                                    <p class="section__text">Some regular old section content here folks.</p>
+                                    <button class="section__call-to-action">Learn More</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="section-fixed-grid" class="section">
+                <div class="fixed-grid-container">
+                    <div class="fixed-grid-element-1">Element 1</div>
+                    <div class="fixed-grid-element-2">Element 2</div>
+                    <div class="fixed-grid-element-3">Element 3</div>
+                    <div class="fixed-grid-element-4">Element 4</div>
+                    <div class="fixed-grid-element-5">Element 5</div>
+                </div>
+            </section>
+
+            <section id="section-scaling-grid" class="section">
+                <div class="scaling-grid-container">
+                    <div class="scaling-grid-element scaling-grid-element-1">Element 1</div>
+                    <div class="scaling-grid-element scaling-grid-element-2">Element 2</div>
+                    <div class="scaling-grid-element scaling-grid-element-3">Element 3</div>
+                    <div class="scaling-grid-element scaling-grid-element-4">Element 4</div>
+                    <div class="scaling-grid-element scaling-grid-element--large">Element 5</div>
+                </div>
+            </section>
+
+            <section id="section-dense-grid" class="section__full-width">
+                <div class="dense-grid-container">
+                    <div class="dense-grid-element dense-grid-element--medium">Joe and Emmitt guys, they really are the best</div>
+                    <div class="dense-grid-element">Once you flexbox you just don't stop, until you grid</div>
+                    <div class="dense-grid-element">Sometimes you feel like a nut, sometimes you don't. That's just the way the cookie crumbles though. Speaking of cookies, might I try one of your bananas?</div>
+                    <div class="dense-grid-element">Ingress Marketing check it out shit's gonna blow your mind</div>
+                    <div class="dense-grid-element">So many JS libraries, so little time</div>
+                    <div class="dense-grid-element dense-grid-element--large">This text is all placeholder so just ignore it for the most part, focus on the elements</div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">FOOTER</footer>
+        <script src="defaults.js"></script>
+    </body>
+</html>
+
+
+
+
